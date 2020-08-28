@@ -1,0 +1,126 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Nintendo Switch",
+      "type": "switch",
+      "price": 2490.90,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71lfEWM9AYL._AC_SL1500_.jpg",
+      "description": "A Nintendo anunciou um modelo atualizado do console que difere do modelo original na longevidade da bateria. Enquanto o modelo original da Nintendo Switch tem uma bateria que dura entre 2.5 a 6.5 horas, o modelo atualizado tem uma bateria que dura entre 4.5 a 9 horas. É uma diferença considerável. No caso específico de The Legend of Zelda: Breath of the Wild, a bateria da Switch original permite jogar durante 3 horas. A bateria do novo modelo permite jogar durante 5.5 horas. Itens Inclusos: 01 - Console Nintendo Switch 01 - Nintendo Switch dock 01 - Joy-Con Azul Neon (Esquerdo) e Joy-Con Vermelho Neon (Direito) 01 - Dois acessórios de pulso Joy-Con 01 - Grip Joy-Con 01 - Cabo HDMI 01 - Adaptador de Força Nintendo Switch"
+    },
+    {
+      "id": 2,
+      "title": "Super Mario Party - Nintendo Switch",
+      "type": "switch",
+      "price": 379.90,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81%2B4Spiow3L._AC_SL1500_.jpg",
+      "description": "Super Mario Party é um jogo de tabuleiro inspirado no clássico Mario Party, desta vez marcando presença no Nintendo Switch com uma infinidade de novos mini-games para se divertir com seus amigos."
+    },
+    {
+      "id": 3,
+      "title": "Super Smash Bros Ultimate - Nintendo Switch",
+      "type": "switch",
+      "price": 379.90,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81aJ-R4E6gL._AC_SL1500_.jpg",
+      "description": "Mundos de jogos lendários e lutadores colidem no confronto final - uma nova entrada na série Super Smash Bros. para o sistema Nintendo Switch!"
+    },
+    {
+      "id": 4,
+      "title": "Super Smash Bros Ultimate - Nintendo Switch",
+      "type": "switch",
+      "price": 379.90,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81aJ-R4E6gL._AC_SL1500_.jpg",
+      "description": "Mundos de jogos lendários e lutadores colidem no confronto final - uma nova entrada na série Super Smash Bros. para o sistema Nintendo Switch!"
+    },
+    {
+      "id": 5,
+      "title": "Nintendo 2Ds Verde + Jogo The Legend of Zelda",
+      "type": "ds",
+      "price": 800.90,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61aj4RRMTCL._AC_SL1000_.jpg",
+      "description": "Apresentamos a Nintendo 2DS, o novíssimo membro da família de consoles Nintendo 3DS. A Nintendo 2DS oferece acesso a um mundo de jogos, funcionalidades e opções de partilha de conteúdos que te permitem ligar a amigos e à comunidade global da Nintendo. Leva a tua experiência de jogo portátil ainda mais longe com a Nintendo 2DS... Joga títulos para o Nintendo 3DS em 2D Na Nintendo 2DS podes jogar todos os títulos para a Nintendo 3DS em 2D. Não percas a oportunidade de (re)descobrir séries da Nintendo como Zelda, Mario, Star Fox, entre outras. Com um catálogo de títulos para o Nintendo 3DS que aumenta todos os meses, há sempre algo para todos! Graças à compatibilidade da Nintendo 2DS com os consoles anteriores, pode, ainda, desfrutar dos jogos para a Nintendo DS."
+    },
+    {
+      "id": 6,
+      "title": "Console Nintendo DS Lite - Rosa Metálico",
+      "type": "ds",
+      "price": 500.00,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51cKTz56PxL._AC_.jpg",
+      "description": "Nintendo 3Ds."
+    },
+    {
+      "id": 7,
+      "title": "Detective Pikachu  - Nintendo 3DS",
+      "type": "ds",
+      "price": 128.08,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71JfJbRZl5L._AC_SL1500_.jpg",
+      "description": "Detective Pikachu, traz um jogo envolvente com um dos Pokémon mais queridos, o Pikachu, que nesta aventura estará junto com Tim Goodman, que é um estudante universitário de 18 anos que luta pela justiça. E eles formam uma parceria improvável com Pikachu, juntos eles reúnem provas e seguem os rastros para poderem desvendar todos os segredos e mistérios."
+    },
+    {
+      "id": 8,
+      "title": "Kirby Battle Royale - Nintendo 3DS",
+      "type": "ds",
+      "price": 119.90,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61nTb9Il7kL._AC_.jpg",
+      "description": "Kirby Battle Royale é um jogo de luta com foco no modo multijogador, no qual diversos personagens da série Kirby se enfrentam em um ringue até a morte, com power ups, armas e itens defensivos ao seu dispor. O jogo mantém o clássico sistema de plataforma, e seu estilo de combate se asemelha muito à série Super Smash Bros."
+    },
+    {
+      "id": 9,
+      "title": "Tales of Symphonia versao Player's choice",
+      "type": "cube",
+      "price": 80.90,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/5112KAYK6AL._AC_.jpg",
+      "description": "Kirby Battle Royale é um jogo de luta com foco no modo multijogador, no qual diversos personagens da série Kirby se enfrentam em um ringue até a morte, com power ups, armas e itens defensivos ao seu dispor. O jogo mantém o clássico sistema de plataforma, e seu estilo de combate se asemelha muito à série Super Smash Bros."
+    },
+    {
+      "id": 10,
+      "title": "Sonic Riders",
+      "type": "cube",
+      "price": 119.90,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/513GSJRVNRL._AC_.jpg",
+      "description": "Kirby Battle Royale é um jogo de luta com foco no modo multijogador, no qual diversos personagens da série Kirby se enfrentam em um ringue até a morte, com power ups, armas e itens defensivos ao seu dispor. O jogo mantém o clássico sistema de plataforma, e seu estilo de combate se asemelha muito à série Super Smash Bros."
+    }
+  ],
+  "stock": [
+    {
+      "id": 1,
+      "quantity": 3
+    },
+    {
+      "id": 2,
+      "quantity": 2
+    },
+    {
+      "id": 3,
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "quantity": 5
+    },
+    {
+      "id": 5,
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "quantity": 1
+    },
+    {
+      "id": 7,
+      "quantity": 1
+    },
+    {
+      "id": 8,
+      "quantity": 1
+    },
+    {
+      "id": 9,
+      "quantity": 1
+    },
+    {
+      "id":10,
+      "quantity": 1
+    }
+  ]
+}
