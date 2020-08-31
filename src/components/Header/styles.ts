@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 interface Props {
-  cartSize?: number;
+  cartsize?: number;
+  likesize?: number;
 }
 
 export const Container = styled.header`
@@ -10,14 +11,12 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   margin: 50px 0;
-  box-shadow: 0 4px 6px -8px #333;
+  box-shadow: 0 4px 6px -8px #2d3748;
 `;
 
 export const Logo = styled(Link)`
   text-decoration: none;
 `;
-
-export const Nav = styled.nav``;
 
 export const Cart = styled(Link)<Props>`
   margin-right: 20px;
@@ -35,15 +34,15 @@ export const Cart = styled(Link)<Props>`
     text-align: center;
     font-size: 13px;
     font-weight: bold;
-    color: #333;
+    color: #2d3748;
 
-    content: '${props => props.cartSize && props.cartSize}';
+    content: '${props => props.cartsize && props.cartsize}';
     display: ${props =>
-      props.cartSize && props.cartSize > 0 ? 'inline' : 'none'};
+      props.cartsize && props.cartsize > 0 ? 'inline' : 'none'};
   }
 `;
 
-export const Favorite = styled(Link)`
+export const Favorite = styled(Link)<Props>`
   position: relative;
 
   &::after {
@@ -58,7 +57,9 @@ export const Favorite = styled(Link)`
     text-align: center;
     font-size: 13px;
     font-weight: bold;
-    color: #333;
-    content: '1';
+    color: #2d3748;
+    content: '${props => props.likesize && props.likesize}';
+    display: ${props =>
+      props.likesize && props.likesize > 0 ? 'inline' : 'none'};
   }
 `;

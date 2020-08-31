@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+import {
+  SiNintendo3Ds,
+  SiNintendoswitch,
+  SiNintendogamecube,
+} from 'react-icons/si';
 
 export const Container = styled.div`
   h2 {
@@ -9,38 +14,52 @@ export const Container = styled.div`
 export const Filter = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  margin: 0 auto;
-  list-style: none;
-  height: 200px;
-  div {
-    background: #f3f3f3;
+  grid-gap: 10px;
+
+  button {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    border: none;
+    background: #f3f3f3;
     border-radius: 8px;
+    padding: 10px;
 
-    button {
-      border: 0;
-      background: none;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-
-      span {
-        font-size: 16px;
-        font-weight: bold;
-        margin-top: 10px;
-      }
+    span {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
     }
   }
 `;
 
+export const DsIcon = styled(SiNintendo3Ds)`
+  width: 46px;
+  height: 46px;
+`;
+
+export const SwitchIcon = styled(SiNintendoswitch)`
+  width: 46px;
+  height: 46px;
+`;
+
+export const GamecubeIcon = styled(SiNintendogamecube)`
+  width: 46px;
+  height: 46px;
+`;
+
 export const Product = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  margin: 0 auto;
+  @media (min-width: 740px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  @media (min-width: 1120px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
 `;

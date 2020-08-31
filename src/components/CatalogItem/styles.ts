@@ -8,13 +8,15 @@ export const Container = styled.div`
   border: transparent;
   padding: 20px;
 
-  > button {
+  a {
     padding: 14px;
     border-radius: 8px;
     border: 0;
     background: #e60012;
     color: #f3f3f3;
     font-weight: bold;
+    text-decoration: none;
+    text-align: center;
 
     &:hover {
       background: ${darken(0.03, '#e60012')};
@@ -36,13 +38,16 @@ export const ProductImage = styled.div`
 `;
 
 export const ProductInfo = styled.div`
+  strong {
+    font-size: 5px;
+  }
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: left;
 
   div {
-    width: 280px;
+    width: 200px;
     display: flex;
     flex-direction: column;
 

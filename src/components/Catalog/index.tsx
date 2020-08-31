@@ -1,14 +1,17 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import {
-  SiNintendo3Ds,
-  SiNintendoswitch,
-  SiNintendogamecube,
-} from 'react-icons/si';
+
 import { IProduct } from '../../store/modules/cart/types';
 import api from '../../services/api';
 import CatalogItem from '../CatalogItem';
 
-import { Container, Filter, Product } from './styles';
+import {
+  Container,
+  Filter,
+  DsIcon,
+  SwitchIcon,
+  GamecubeIcon,
+  Product,
+} from './styles';
 
 const Catalog: React.FC = () => {
   const [catalog, setCatalog] = useState<IProduct[]>([]);
@@ -35,24 +38,18 @@ const Catalog: React.FC = () => {
   return (
     <Container>
       <Filter>
-        <div>
-          <button type="button" onClick={() => handleFilter(ds)}>
-            <SiNintendo3Ds size={120} />
-            <span>Nintendo DS</span>
-          </button>
-        </div>
-        <div>
-          <button type="button" onClick={() => handleFilter(nswitch)}>
-            <SiNintendoswitch size={120} />
-            <span>Nintendo Switch</span>
-          </button>
-        </div>
-        <div>
-          <button type="button" onClick={() => handleFilter(cube)}>
-            <SiNintendogamecube size={120} />
-            <span>Nintendo GameCube</span>
-          </button>
-        </div>
+        <button type="button" onClick={() => handleFilter(ds)}>
+          <DsIcon />
+          <span>Nintendo DS</span>
+        </button>
+        <button type="button" onClick={() => handleFilter(nswitch)}>
+          <SwitchIcon />
+          <span>Nintendo Switch</span>
+        </button>
+        <button type="button" onClick={() => handleFilter(cube)}>
+          <GamecubeIcon />
+          <span>Nintendo GameCube</span>
+        </button>
       </Filter>
       <h2>Produtos</h2>
       <Product>

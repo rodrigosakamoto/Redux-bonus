@@ -2,12 +2,16 @@ import React from 'react';
 import { FiShoppingCart, FiHeart } from 'react-icons/fi';
 import { useSelector } from 'react-redux';
 
-import { Container, Logo, Nav, Cart, Favorite } from './styles';
+import { Container, Logo, Cart, Favorite } from './styles';
 import { IState } from '../../store';
 
 const Header: React.FC = () => {
   const cartSize = useSelector<IState, number>(
     state => state.cart.items.length,
+  );
+
+  const likeSize = useSelector<IState, number>(
+    state => state.cart.likes.length,
   );
 
   return (
@@ -18,15 +22,14 @@ const Header: React.FC = () => {
           alt="Nintendo"
         />
       </Logo>
-      <Nav>
-        <Cart to="/" cartSize={cartSize}>
-          <FiShoppingCart size={24} color="#d3d3d3" />
-          <span />
+      <nav>
+        <Cart to="/cart" cartsize={cartSize}>
+          <FiShoppingCart size={24} color="#a0aec0" />
         </Cart>
-        <Favorite to="/">
-          <FiHeart size={24} color="#d3d3d3" />
+        <Favorite to="/" likesize={likeSize}>
+          <FiHeart size={24} color="#a0aec0" />
         </Favorite>
-      </Nav>
+      </nav>
     </Container>
   );
 };

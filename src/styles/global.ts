@@ -4,16 +4,17 @@ export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     outline: 0;
+    box-sizing: border-box;
   }
 
   body {
     -webkit-font-smoothing: antialiased;
   }
     body, input, button {
-    font-family: 'Roboto', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    color: #2d3748;
   }
 
   #root {

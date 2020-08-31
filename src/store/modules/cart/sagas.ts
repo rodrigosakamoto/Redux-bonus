@@ -4,13 +4,18 @@ import {
   addProductToCartRequest,
   addProductToCartSuccess,
   addProductToCartFailure,
+  updateQuantityRequest,
+  updateQuantitySuccess,
+  likeProductRequest,
+  likeProductSuccess,
 } from './actions';
 import { IState } from '../..';
 import api from '../../../services/api';
 import { ActionTypes } from './types';
 
 type CheckProductStockRequest = ReturnType<typeof addProductToCartRequest>;
-
+type UpdateQuantityRequest = ReturnType<typeof updateQuantityRequest>;
+type LikeProductRequest = ReturnType<typeof likeProductRequest>;
 interface IStockResponse {
   id: number;
   quantity: number;
@@ -37,6 +42,22 @@ function* checkProductStock({ payload }: CheckProductStockRequest) {
   }
 }
 
+function* updateQuantity({ payload }: UpdateQuantityRequest) {
+  const { productId, quantity } = payload;
+  if (quantity <= 0) return;
+
+  const stock = yield call(api.get, `stock/${productId}`);
+  const stockAmount = stock.data.quantity;
+
+  if (quantity > stockAmount) {
+    console.log('Quantidade solicitada fora de estoque');
+    return;
+  }
+
+  yield put(updateQuantitySuccess(productId, quantity));
+}
+
 export default all([
   takeLatest(ActionTypes.addProductToCartRequest, checkProductStock),
+  takeLatest(ActionTypes.updateQuantityRequest, updateQuantity),
 ]);
