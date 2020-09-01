@@ -11,14 +11,14 @@ const Footer: React.FC = () => {
         <a
           href="https://github.com/rodrigosakamoto"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <FiGithub size={24} color="#2d3748" />
         </a>
         <a
           href="https://www.linkedin.com/in/rodrigo-sakamoto/"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <FiLinkedin size={24} color="#2d3748" />
         </a>

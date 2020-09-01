@@ -1,5 +1,6 @@
 import { all, takeLatest, select, call, put } from 'redux-saga/effects';
 import { AxiosResponse } from 'axios';
+import { toast } from 'react-toastify';
 import {
   addProductToCartRequest,
   addProductToCartSuccess,
@@ -7,7 +8,6 @@ import {
   updateQuantityRequest,
   updateQuantitySuccess,
   likeProductRequest,
-  likeProductSuccess,
 } from './actions';
 import { IState } from '../..';
 import api from '../../../services/api';
@@ -38,6 +38,7 @@ function* checkProductStock({ payload }: CheckProductStockRequest) {
   if (availableStockResponse.data.quantity > currentQuantity) {
     yield put(addProductToCartSuccess(product));
   } else {
+    toast.error('Quantidade solicitada fora de estoque');
     yield put(addProductToCartFailure(product.id));
   }
 }
@@ -50,7 +51,7 @@ function* updateQuantity({ payload }: UpdateQuantityRequest) {
   const stockAmount = stock.data.quantity;
 
   if (quantity > stockAmount) {
-    console.log('Quantidade solicitada fora de estoque');
+    toast.error('Quantidade solicitada fora de estoque!');
     return;
   }
 
