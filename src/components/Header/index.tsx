@@ -26,7 +26,7 @@ const Header: React.FC = () => {
         <Cart to="/cart" cartsize={cartSize}>
           <FiShoppingCart size={24} color="#a0aec0" />
         </Cart>
-        <Favorite to="/" likesize={likeSize}>
+        <Favorite to="/favorites" likesize={likeSize}>
           <FiHeart size={24} color="#a0aec0" />
         </Favorite>
       </nav>
