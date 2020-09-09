@@ -32,6 +32,10 @@ export const Filter = styled.div`
       font-weight: bold;
       margin-top: 10px;
     }
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 `;
 

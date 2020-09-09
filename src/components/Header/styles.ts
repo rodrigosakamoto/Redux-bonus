@@ -22,6 +22,10 @@ export const Cart = styled(Link)<Props>`
   margin-right: 20px;
   position: relative;
 
+  svg:hover {
+    opacity: 0.7;
+  }
+
   &::after {
     background-color: #f3f3f3;
     width: 16px;
@@ -44,6 +48,10 @@ export const Cart = styled(Link)<Props>`
 
 export const Favorite = styled(Link)<Props>`
   position: relative;
+
+  svg:hover {
+    opacity: 0.7;
+  }
 
   &::after {
     background-color: #f3f3f3;
